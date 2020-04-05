@@ -1,6 +1,7 @@
+dist: bionic
 language: csharp
 solution: cli-netlite.sln
-dotnet: 2.0.0
+dotnet: 2.1.805
 
 services:
   - docker

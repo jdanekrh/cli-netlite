@@ -20,7 +20,7 @@ script:
   - sleep 10
   - msbuild /p:Configuration=TravisCI cli-netlite.sln
   # https://stackoverflow.com/questions/31038629/run-nunit-test-on-ubuntu-from-command-line
-  - mono NUnit.ConsoleRunner.3.11.1/tools/nunit3-console.exe ./test/ClientUnitTests/bin/Debug/ClientUnitTests.dll
+  - mono NUnit.ConsoleRunner.*/tools/nunit3-console.exe ./test/ClientUnitTests/bin/Debug/ClientUnitTests.dll
   - dotnet build ./src/dotNetCore/ClientLibNetCore
   - dotnet build ./src/dotNetCore/NetCoreSender
   - dotnet build ./src/dotNetCore/NetCoreReceiver
